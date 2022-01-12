@@ -90,4 +90,10 @@ config FS_LITTLEFS_FC_HEAP_SIZE
 	  support up to FS_LITTLE_FS_NUM_FILES blocks of
 	  FS_LITTLEFS_CACHE_SIZE bytes.
 
+config FS_LITTLEFS_READONLY
+	bool "Enable readonly little fs"
+	default 0
+	help
+	  Enable readonly littlefs
+
 endif # FILE_SYSTEM_LITTLEFS
